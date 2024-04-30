@@ -12,7 +12,7 @@
 body {
     font-family: "Quicksand", sans-serif;
     margin: 0;
-  }
+}
 .login {
     width: 100%;
     height: 100vh;
@@ -26,29 +26,21 @@ body {
 }
 .logo {
     width: 150px;
-    margin-bottom: 50px;
     justify-self: center;
+    margin-bottom: 10px;
     display: none;
 }
-.title{
+.title {
     font-size: var(--lg);
-    margin-bottom: 12px;
     text-align: center;
-}
-.subtitle {
-    color: var(--very-light-pink);
-    font-size: var(--md);
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 32px;
-    text-align: center;
+    margin-bottom: 10px;
 }
 .form {
     display: flex;
     flex-direction: column;
 }
 .label {
-    font-size: var(--sm);
+    font-size: var(--sd);
     font-weight: 700;
     margin-bottom: 4px;
 }
@@ -56,16 +48,15 @@ body {
     background-color: var(--text-input-field);
     border: none;
     border-radius: 8px;
-    height: 30px;
+    color: var(--white);
+    width: 100%;
     font-size: var(--md);
+    height: 30px;
     padding: 6px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 .primary_button {
-    background-color: var(--hospital-green);
     border-radius: 8px;
-    border: none;
-    color: var(--white);
     width: 100%;
     cursor: pointer;
     font-size: var(--md);
@@ -73,12 +64,25 @@ body {
     height: 50px;
 }
 .login_button {
-    margin-top: 14px;
-    margin-bottom: 30px;
+    color: var(--white);
+    background-color: var(--hospital-green);
+    border: none;
 }
-
+.forget {
+    text-align: center;
+    color: var(--hospital-green);
+}
+.sing-up {
+    color: var(--hospital-green);
+    background-color: var(--white);
+    border: solid var(--hospital-green);
+    margin-top: 50px;
+}
 @media (max-width: 640px) {
     .logo {
         display: block;
+    }
+    .sing-up {
+        margin-top: 200px;
     }
 }
